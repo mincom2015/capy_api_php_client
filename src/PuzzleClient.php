@@ -1,12 +1,8 @@
 <?php
 namespace Capy;
 
-require_once __DIR__ . '/BaseClient.php';
-
 use GuzzleHttp\Client;
 use Exception;
-use capy\PuzzleConst;
-use capy\CapyMapping;
 
 class PuzzleClient extends BaseClient
 {

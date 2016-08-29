@@ -7,7 +7,6 @@ require_once __DIR__ . '/capy_const.php';
 use GuzzleHttp\Exception\RequestException;
 use Exception;
 
-
 abstract class BaseClient
 {
     var $privateKey; // You can see the key on server capy https://jp.api.capy.em/account/edit

@@ -1,5 +1,5 @@
 <?php
-namespace capy;
+namespace Capy;
 
 class PuzzleConst
 {

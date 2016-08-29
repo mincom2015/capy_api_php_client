@@ -1,48 +1,47 @@
 <?php
 
-    require_once __DIR__ . '/../src/AvatarClient.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+use Capy\AvatarClient;
+use Capy\AvatarConst;
 
-    use Capy\AvatarClient;
-    use capy\AvatarConst;
-
-    if($_POST['formSubmit'] == "Submit")
-    {
-        $challenge_key = $_POST['capy_challengekey'];
-        $apiKey = "KEY_RXAX3cUJCfH9jSYybCFwwwmpEsML6X";
-        $answer = $_POST['capy_answer'];
-        $client = new AvatarClient($apiKey, 30);
-        $result = $client->verify($challenge_key, $answer);
-        switch ($result){
-            case AvatarConst::Success;
-                print "";
-                break;
-            case AvatarConst::IncorrectAnswer;
-                print "";
-                break;
-            case AvatarConst::InvalidRequestMethod;
-                print "";
-                break;
-            case AvatarConst::InvalidPostParameters;
-                print "";
-                break;
-            case AvatarConst::InvalidChallengeKey;
-                print "";
-                break;
-            case AvatarConst::IsNotActive;
-                print "";
-                break;
-            case AvatarConst::UnknownError;
-                print "";
-                break;
-            case AvatarConst::Timeout;
-                print "";
-                break;
-            default:
-                print "";
-                break;
-        }
-        echo json_encode($result);
+if($_POST['formSubmit'] == "Submit")
+{
+    $challenge_key = $_POST['capy_challengekey'];
+    $apiKey = "KEY_RXAX3cUJCfH9jSYybCFwwwmpEsML6X";
+    $answer = $_POST['capy_answer'];
+    $client = new AvatarClient($apiKey, 30);
+    $result = $client->verify($challenge_key, $answer);
+    switch ($result){
+        case AvatarConst::Success;
+            print "";
+            break;
+        case AvatarConst::IncorrectAnswer;
+            print "";
+            break;
+        case AvatarConst::InvalidRequestMethod;
+            print "";
+            break;
+        case AvatarConst::InvalidPostParameters;
+            print "";
+            break;
+        case AvatarConst::InvalidChallengeKey;
+            print "";
+            break;
+        case AvatarConst::IsNotActive;
+            print "";
+            break;
+        case AvatarConst::UnknownError;
+            print "";
+            break;
+        case AvatarConst::Timeout;
+            print "";
+            break;
+        default:
+            print "";
+            break;
     }
+    echo json_encode($result);
+}
 ?>
 
 <form action="avatar_demo.php" method="post">

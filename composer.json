@@ -1,7 +1,7 @@
 {
     "name": "capy/capy_api_client",
-    "description": "Capy API client makes verify or evaluate of capy's services become easier",
-    "type": "lib",
+    "description": "Capy is a PHP HTTP client library. It makes verify or evaluate of capy's services become easier",
+    "type": "library",
     "require": {
         "php": ">=5.4",
         "guzzlehttp/guzzle": "^6.2"
