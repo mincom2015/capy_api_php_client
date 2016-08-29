@@ -14,7 +14,7 @@ class RiskBaseClient extends BaseClient
     function evaluate($capy_data)
     {
         try {
-            $client = new Client(["base_uri" => CAPY_URL,
+            $client = new Client(["base_uri" => self::CAPY_URL,
                 "timeout" => $this->timeOut,
                 "stream" => false]);
 

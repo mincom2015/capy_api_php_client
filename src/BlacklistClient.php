@@ -13,7 +13,7 @@ class BlacklistClient extends BaseClient
     function evaluate($ip_address)
     {
         try {
-            $client = new Client(["base_uri" => CAPY_URL,
+            $client = new Client(["base_uri" => self::CAPY_URL,
                 "timeout" => $this->timeOut,
                 "stream" => false ]);
 
