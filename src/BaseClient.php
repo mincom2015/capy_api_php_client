@@ -1,7 +1,6 @@
 <?php
 namespace Capy;
 
-require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/capy_const.php';
 
 use GuzzleHttp\Exception\RequestException;
