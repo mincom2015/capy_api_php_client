@@ -1,5 +1,5 @@
 {
-    "name": "Capy Inc",
+    "name": "capy_api_client",
     "description": "Capy API PHP client",
     "type": "lib",
     "require": {
