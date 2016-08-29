@@ -1,12 +1,8 @@
 <?php
 namespace Capy;
 
-require_once __DIR__ . '/BaseClient.php';
-
 use GuzzleHttp\Client;
 use Exception;
-use capy\CapyMapping;
-use GuzzleHttp\Exception\RequestException;
 
 class RiskBaseClient extends BaseClient
 {
