@@ -1,6 +1,6 @@
 {
     "name": "capy/capy_api_client",
-    "description": "Capy API PHP client",
+    "description": "Capy API client makes verify or evaluate of capy's services become easier",
     "type": "lib",
     "require": {
         "php": ">=5.4",
@@ -12,7 +12,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "capy\\": "src/"
+            "capy\\capy_api_client\\": "src/"
         }
     }
 }
