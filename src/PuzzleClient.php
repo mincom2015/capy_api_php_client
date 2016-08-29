@@ -14,7 +14,7 @@ class PuzzleClient extends BaseClient
     function verify($challenge_key, $answer)
     {
         try {
-            $client = new Client(["base_uri" => CAPY_URL,
+            $client = new Client(["base_uri" => self::CAPY_URL,
                 "timeout" => $this->timeOut,
                 "stream" => false ]);
 
