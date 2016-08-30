@@ -1,0 +1,18 @@
+{
+    "name": "capy/capy_api_client",
+    "description": "Capy PHP HTTP client library makes verify puzzle/avatar and evaluate blacklist/riskbase for capy's services become easier",
+    "type": "library",
+    "require": {
+        "php": ">=5.4",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Capy\\": "src/"
+        }
+    }
+}
