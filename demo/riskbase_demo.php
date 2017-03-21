@@ -59,3 +59,5 @@ if($_POST['formSubmit'] == "Submit")
     <input type="text" name="username" value="">
     <input type="submit" name="formSubmit" value="Submit">
 </form>
+<!--Test 1-->
+<!--Test 2-->
